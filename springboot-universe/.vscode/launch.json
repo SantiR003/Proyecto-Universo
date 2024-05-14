@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootConfigApplication<springboot-config>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.config.springbootconfig.SpringbootConfigApplication",
+            "projectName": "springboot-config",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62391 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-config"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootEurekaApplication<springboot-eureka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.eureka.springbooteureka.SpringbootEurekaApplication",
+            "projectName": "springboot-eureka",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62401 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-eureka"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootGatewayApplication<springboot-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.gateway.springbootgateway.SpringbootGatewayApplication",
+            "projectName": "springboot-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62413 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-gateway"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootPlanetsApplication<springboot-planets>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.planets.springbootplanets.SpringbootPlanetsApplication",
+            "projectName": "springboot-planets",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootLunasApplication<springboot-lunas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.lunas.springbootlunas.SpringbootLunasApplication",
+            "projectName": "springboot-lunas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootStarsApplication<springboot-stars>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.stars.springbootstars.SpringbootStarsApplication",
+            "projectName": "springboot-stars",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

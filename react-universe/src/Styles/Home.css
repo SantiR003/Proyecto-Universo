@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* Inicio de pagina */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.container-earth {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.Spline {
+    width: 100%;
+    height: 100%;
+}
+
+ .text-title {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%; 
+    transform: translate(-50%, -35%); 
+    z-index: 1;
+    text-align: center;
+  }
+  
+  h1{
+    text-align: center;
+    background: linear-gradient(to right, #009dff, #ad7bfe); 
+    background-clip: text;
+    color: transparent;
+    font-family: "Cinzel", serif;
+    font-size: 1.9rem;
+    font-weight:600;
+    z-index: 1; 
+    padding: 10px;
+  }
+
+  .text-intro{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    font-weight:100;
+    z-index: 1; 
+    padding: 10px;
+    margin-bottom: 2.5rem;
+  }
+
+
+/* Sistema solar */
+
+h2{
+    text-align: center;
+    background: linear-gradient(to right, #009dff, #ad7bfe); 
+    background-clip: text;
+    color: transparent;
+    font-family: "Cinzel", serif;
+    font-size: xx-large;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+ 
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 75rem;
+    gap: 1.5rem;
+}
+ 
+.articles article {
+    max-width: 20rem;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.articles article a {
+    display: inline-flex;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+
+.articles article h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+    color: var(--secondary);
+    transition: color 0.3s ease-out;
+}
+
+  
+.article-preview {
+    padding: 1.5rem;
+    background: rgba(242, 242, 242, 0.979);
+}
+
+.articles figure {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 13rem;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+#loadingMessage{
+  color: white;
+}
+
+
+  /* Mobile */
+@media (max-width: 480px) {
+ 
+
+}
+
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    h1{
+        font-size: 2.2rem;
+      }
+
+    .text-title {
+        width: 80%;
+      }
+
+      .text-intro{
+        font-size: medium;
+        text-align: justify;
+      }
+}
+
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    h1{
+        font-size: 2rem;
+      }
+
+    .text-title {
+        width: 50%;
+        transform: translate(-18%, 15%); 
+      }
+
+      .text-intro{
+        font-size: large;
+        text-align: justify;
+      }
+   
+}
+
+/* Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    h1{
+        font-size: 2rem;
+      }
+
+    .text-title {
+        width: 50%;
+        transform: translate(-10%, 15%); 
+      }
+
+      .text-intro{
+        font-size: large;
+        text-align: justify;
+      }
+
+  
+}
+
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+
+    h1{
+        font-size: 2rem;
+      }
+
+      .text-title {
+        width: 50%;
+        transform: translate(-7%, 15%); 
+      }
+
+      .text-intro{
+        font-size: large;
+        text-align: justify;
+      }
+
+
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) and (max-width: 2047px) {
+
+    h1{
+        font-size: 3.5rem;
+      }
+
+      .text-title {
+        width: 40%;
+        transform: translate(5%, 15%); 
+      }
+
+      .text-intro{
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+
+
+}
+
+
+@media (min-width: 2048px) {
+
+    h1{
+        font-size: 4rem;
+      }
+
+      .text-title {
+        width: 40%;
+        transform: translate(10%, 25%); 
+      }
+
+      .text-intro{
+        font-size: 2rem;
+        text-align: justify;
+      }
+}
