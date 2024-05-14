@@ -38,7 +38,7 @@ export const HomeUniverse = () => {
 
             <section className="container-presentacion">
                 <div className="text-title">
-                    <h1>Conociendo el cosmos</h1>
+                    <h1 className="title">Conociendo el cosmos</h1>
 
                     <div className="text-intro">
                         <p>Segun la teoria del Big Bang, hace aproximadamente 13.800 millones de años, el universo experimento una expansion a partir de una singularidad infinitamente densa y con una temperatura muy elevada. Este evento generó inmensas cantidades de energia y materia, dando lugar al universo observable de hoy en dia.</p>
@@ -50,13 +50,13 @@ export const HomeUniverse = () => {
                 </div>
             </section>
             <section className="container-solarSystem">
-               <h2>El Sistema Solar</h2>
+               <h2 className="title subTitle">El Sistema Solar</h2>
                 <div className="background">
                     <div className="centering">
                         <div className="articles">
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/YVmIIZ1QtWL9ivYO/scene.splinecode"></spline-viewer>                             
+                                <img className="sol" src="public\sol-removebg-preview.png" alt="" />                             
                                 </figure>
                                 <div className="article-preview">
                                     <h2>SOL</h2>
@@ -73,7 +73,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy"  url="https://prod.spline.design/uZYGF-2y2nxhFXye/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img src="public\el-planeta-mercurio_c7bafef8_1280x720-removebg-preview.png" alt="" />
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Mercurio</h2>
                                     <p>
@@ -89,7 +90,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/JGddM06htbXQv2ta/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img src="public\Venus_globe-removebg-preview.png" alt="" />
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Venus</h2>
                                     <p>
@@ -105,7 +107,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" loading-anim-type="spinner-small-dark" url="https://prod.spline.design/NN2eoKitYY8nV9kI/scene.splinecode"></spline-viewer>                                </figure>
+                                <img className="tierra" src="public\world-1348808__340.webp" alt="" />
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Tierra</h2>
                                     <p>
@@ -121,7 +124,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/PEyyJc0aeGLXBBNE/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img className="marte" src="public\Schiaparelli_Hemisphere_Enhanced-removebg-preview.png" alt="" />
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Marte</h2>
                                     <p>
@@ -137,7 +141,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/cYWZfaaUksN3tYL8/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img className="jupiter" src="public\Jupiter-removebg-preview.png" alt="" /> 
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Júpiter</h2>
                                     <p>
@@ -153,7 +158,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/OdFUCFWUIaQt19OP/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img className="saturno" src="public\saturno-removebg-preview.png" alt="" />
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Saturno</h2>
                                     <p>
@@ -169,7 +175,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/nCbXHxaVcPORVHCX/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img src="public\Uranus-removebg-preview.png" alt="" />
+                                </figure>
                                 <div className="article-preview">
                                     <h2>Urano</h2>
                                     <p>
@@ -185,7 +192,8 @@ export const HomeUniverse = () => {
                             </article>
                             <article>
                                 <figure>
-                                <spline-viewer loading="lazy" url="https://prod.spline.design/D-N5G1UZ3pyEitWJ/scene.splinecode"></spline-viewer>                                </figure>
+                                    <img className="neptuno" src="public\Neptuno-removebg-preview.png" alt="" />                 
+                                 </figure>
                                 <div className="article-preview">
                                     <h2>Neptuno</h2>
                                     <p>

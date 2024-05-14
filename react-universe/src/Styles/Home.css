@@ -21,10 +21,6 @@ body{
     pointer-events: none;
 }
 
-.Spline {
-    width: 100%;
-    height: 100%;
-}
 
  .text-title {
     position: absolute;
@@ -61,11 +57,14 @@ body{
 
 /* Sistema solar */
 
+.container-solarSystem{
+  margin-top: 10rem;
+}
+
 h2{
     text-align: center;
-    background: linear-gradient(to right, #009dff, #ad7bfe); 
-    background-clip: text;
-    color: transparent;
+    color: rgb(159, 38, 38);
+    font-weight: 600;
     font-family: "Cinzel", serif;
     font-size: xx-large;
 }
@@ -83,7 +82,7 @@ h2{
     margin: 0 auto;
     justify-content: center;
     max-width: 75rem;
-    gap: 1.5rem;
+    gap: 2rem;
 }
  
 .articles article {
@@ -125,6 +124,50 @@ h2{
     overflow: hidden;
 }
 
+.articles figure img {
+  height: 100%;
+  margin-left: 3rem;
+  aspect-ratio: 9 / 9;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.read-more:hover{
+    color: #ff0443;
+    transition: color 0.3s ease; 
+}
+
+.articles article:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.articles figure .jupiter{
+  aspect-ratio: 10 / 9;
+}
+
+.articles figure .tierra{
+  height: 95%;
+}
+
+.articles figure .marte{
+  margin-left: 3.6rem;
+  height: 95%;
+}
+
+.articles figure .saturno{
+ overflow: visible;
+}
+
+.articles figure .neptuno{
+  margin-left: 1.7rem;
+  aspect-ratio: 12 / 9;
+}
+
+.articles figure .sol{
+  aspect-ratio: 10 / 9;
+
+}
 
 #loadingMessage{
   color: white;
@@ -141,7 +184,7 @@ h2{
 /* Extra small devices */
 @media (min-width: 481px) and (max-width: 767px) {
 
-    h1{
+    .title{
         font-size: 2.2rem;
       }
 
@@ -159,7 +202,7 @@ h2{
 /* Small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
 
-    h1{
+  .title{
         font-size: 2rem;
       }
 
@@ -178,7 +221,7 @@ h2{
 /* Large tablets/laptops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    h1{
+  .title{
         font-size: 2rem;
       }
 
@@ -198,7 +241,7 @@ h2{
 /* Desktops */
 @media (min-width: 1200px) and (max-width: 1919px) {
 
-    h1{
+  .title{
         font-size: 2rem;
       }
 
@@ -218,7 +261,7 @@ h2{
 /* Extra large screens */
 @media (min-width: 1920px) and (max-width: 2047px) {
 
-    h1{
+  .title{
         font-size: 3.5rem;
       }
 
@@ -238,7 +281,7 @@ h2{
 
 @media (min-width: 2048px) {
 
-    h1{
+  .title{
         font-size: 4rem;
       }
 
