@@ -289,6 +289,21 @@ h2 {
   width: 80%;
 }
 
+/* Contenedor datosRandom */
+
+.container-randomData{
+  margin-top: 10rem;
+}
+
+.personalized-img img{
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  flex-direction: column-reverse;
+}
 /* Mobile */
 @media (max-width: 480px) {}
 
