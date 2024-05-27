@@ -44,5 +44,11 @@ public class Planet {
     @Column(name = "estrella_id")
     private Integer estrellaId;
     private Integer orbita;
+    @Column(name = "model_url")
+    private String modelUrl;
+    @Column(name = "model_compare_url")
+    private String modelCompareUrl;
+    @Column(name = "image_url")
+    private String imageURL;
 
 }
