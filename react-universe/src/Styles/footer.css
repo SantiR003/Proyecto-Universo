@@ -1,0 +1,39 @@
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(84, 67, 146, 0.347);
+    height: 4rem;
+}
+
+.iconos-footer img {
+    width: 1.2rem;
+    height: 1.2rem;
+    text-align: center;
+    opacity: 0.7;
+    transition: opacity 200ms;
+}
+
+.texto-footer p {
+    color: rgba(255, 255, 255, 0.612);
+}
+
+
+.texto-footer a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 200ms;
+}
+
+.iconos-footer img:hover {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+
+.texto-footer a:hover {
+    opacity: 1;
+    transition: opacity 200ms;
+}

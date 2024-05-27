@@ -13,6 +13,21 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
+#spline-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#spline-container img {
+  margin-top: 17rem;
+  max-width: 100%;
+  max-height: 50vh; 
+}
+
 .container-presentacion {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -40,6 +55,7 @@ body {
 }
 
 h1 {
+  margin-top: 5rem; 
   text-align: center;
   background: linear-gradient(to right, #009dff, #ad7bfe);
   background-clip: text;
@@ -187,6 +203,7 @@ h2 {
 /* Informacion del universo */
 
 .container-universeData {
+  margin-bottom: 5rem;
   margin-top: 10rem;
 }
 
@@ -288,22 +305,6 @@ h2 {
   margin-bottom: 1rem;
   width: 80%;
 }
-
-/* Contenedor datosRandom */
-
-.container-randomData{
-  margin-top: 10rem;
-}
-
-.personalized-img img{
-  width: 100%;
-  height: 400px;
-}
-
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-  display: flex;
-  flex-direction: column-reverse;
-}
 /* Mobile */
 @media (max-width: 480px) {}
 
@@ -343,6 +344,7 @@ h2 {
 
   .title {
     font-size: 3.5rem;
+    margin-top: 0; 
   }
 
   .subTitle {
@@ -380,6 +382,7 @@ h2 {
 
   .title {
     font-size: 3.5rem;
+    margin-top: 0; 
   }
 
   .subTitle {
@@ -422,6 +425,7 @@ h2 {
 
   .title {
     font-size: 4rem;
+    margin-top: 0; 
   }
 
   .subTitle {
@@ -469,6 +473,7 @@ h2 {
 
   .title {
     font-size: 3.5rem;
+    margin-top: 0; 
   }
 
   .subTitle {
@@ -520,6 +525,7 @@ h2 {
 
   .title {
     font-size: 4rem;
+    margin-top: 0; 
   }
 
   .subTitle {

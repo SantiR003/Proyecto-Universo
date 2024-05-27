@@ -1,9 +1,33 @@
-import { HomeUniverse } from './Components/Home.jsx'
+import { Navigate, Route, Routes } from "react-router-dom";
+import { PageUniverse } from "./Components/Page";
+import { PlanetDetail } from "./Components/PlanetDetails/Details";
+import { useState } from "react";
+import { Footer } from "./Components/Footer.jsx";
+import { Header } from "./Components/Header";
 
 export const UniverseLanding = () => {
 
-    return(
-        <HomeUniverse/>
+    const [data, setData] = useState(0);
+    const[data2, setData2] = useState('');
+ 
+    const ValueToDetails = (value, secondValue) => {
+        setData(value);
+        setData2(secondValue);
+    };
+
+    return (
+        <>
+        <Header/>
+            <Routes>
+                <Route path="home" element={<PageUniverse valueToDetails={ValueToDetails}/>} />
+                <Route path="details" element={<PlanetDetail valueToDetails={data}  valueToDetails2 = {data2} />} />
+
+                <Route path="/" element={<Navigate to={'/home'} />} />
+                <Route path="**" element={<Navigate to={'/home'} />} />
+            </Routes>
+            <Footer/>
+
+        </>
     );
-    
+
 }
