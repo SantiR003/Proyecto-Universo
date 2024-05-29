@@ -48,9 +48,19 @@
         margin-top: 10rem;
     }
 
-    .planet-model button{
-        width: 100px;
-        margin: 0 auto;
+    .personalized-spinner{
+        position: absolute;
+        left: 50%;
+        top: 30%;
+    }
+
+    .container-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .data-table{
+        text-align: center;
     }
     
  
@@ -66,6 +76,24 @@
 
     .planet-model {
         max-width: 700px;
+    }
+
+    
+    .personalized-spinner{
+        position: absolute;
+        left: 35%;
+        top: 47%;
+    }
+
+    .container-button{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+        color: var(--bs-btn-active-color);
+        background-color: rgba(131, 109, 156, 0.539);
+        border-color: rgba(131, 109, 156, 0.539);
     }
     
  
@@ -84,8 +112,23 @@
     .planet-model {
         max-width: 800px;
     }
+
+    .personalized-spinner{
+        position: absolute;
+        left: 38%;
+        top: 47%;
+    }
+
+    .container-button{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+        color: var(--bs-btn-active-color);
+        background-color: rgba(131, 109, 156, 0.539);
+        border-color: rgba(131, 109, 156, 0.539);
+    }
     
- 
 
 }
 
@@ -95,9 +138,29 @@
         justify-content: center;
         align-items: center;
     }
-    .planet-model {
-        max-width: 800px;
+
+    .planet-mode {
+       max-width: 800px; 
+        height: auto;
     }
+
+    .personalized-spinner{
+        position: absolute;
+        left: 40%;
+        top: 45%;
+    }
+
+    .container-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+        color: var(--bs-btn-active-color);
+        background-color: rgba(131, 109, 156, 0.539);
+        border-color: rgba(131, 109, 156, 0.539);
+    }
+    
  
 }
 
@@ -113,8 +176,24 @@
     .planet-model {
         max-width: 1200px;
     }
+
+    .personalized-spinner{
+        position: absolute;
+        left: 45%;
+        top: 47%;
+    }
+
+    .container-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+        color: var(--bs-btn-active-color);
+        background-color: rgba(131, 109, 156, 0.539);
+        border-color: rgba(131, 109, 156, 0.539);
+    }
     
- 
  
 }
 

@@ -14,6 +14,7 @@ export const HomeUniverse = ({valueToDetails}) => {
     };
 
     const [sceneContent, setSceneContent] = useState(getInitialSceneContent);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const handleResize = () => {
@@ -29,6 +30,10 @@ export const HomeUniverse = ({valueToDetails}) => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    const handleLoading = () => {
+        setLoading(false);
+    }
         
     return (
         <div className="container-home">
@@ -41,7 +46,14 @@ export const HomeUniverse = ({valueToDetails}) => {
                 </div>
                 <div id="spline-container" style={{ width: '100%', height: '100vh' }}>
                 {sceneContent.type === 'spline' ? (
-                        <Spline scene={sceneContent.url} />
+                    <>
+                     {loading && (<div class="d-flex justify-content-center personalized-spinner">
+                                <div class="spinner-border text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>)}
+                        <Spline onLoad={handleLoading} scene={sceneContent.url} />
+                    </>
                     ) : (
                         <img src={sceneContent.url} alt="world image" />
                     )}
