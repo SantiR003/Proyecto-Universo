@@ -42,4 +42,10 @@ public class Estrella {
     private String edad;
     private Double gravedad;
     private Integer orbita;
+    @Column(name = "model_url")
+    private String modelUrl;
+    @Column(name = "model_compare_url")
+    private String modelCompareUrl;
+    @Column(name = "image_url")
+    private String imageURL;
 }
