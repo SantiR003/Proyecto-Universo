@@ -59,7 +59,7 @@ header ul li a {
 }
 
 .container-header .elemento-nav:hover {
-    color: rgb(106, 221, 241);
+    color: rgba(133, 188, 242, 0.982);
  }
 
 
@@ -92,10 +92,18 @@ header ul li a {
         margin-top: 2rem;
         margin-left: 11rem;
         height: 70px;
-        width: 55%;
     }
 
-    .toHome{
+    .home-header{
+        width: 55%;
+    }
+    
+    .details-header{
+        margin-left: 17rem;
+        width: 30%;
+    }
+
+    .elemento-detailsPage{
         width: 20%;
     }
 }
@@ -112,10 +120,17 @@ header ul li a {
         margin-top: 2rem;
         margin-left: 19rem;
         padding: 2px 0px;
-        height: 55px;
         width: 45%;
     }
 
+    .home-header{
+        width: 45%;
+    }
+    
+    .details-header{
+        margin-left: 25rem;
+        width: 25%;
+    }
 }
 
 /* Desktops */
@@ -129,9 +144,17 @@ header ul li a {
     .container-header {
         margin-top: 2rem;
         margin-left: 30rem;
-        width: 35%;
         height: 60px;
         padding: 0px 0px;
+    }
+
+    .home-header{
+        width: 35%;
+    }
+    
+    .details-header{
+        margin-left: 38rem;
+        width: 19%;
     }
 
 
@@ -151,9 +174,17 @@ header ul li a {
     .container-header {
         margin-top: 2rem;
         margin-left: 43rem;
-        width: 25%;
         height: 60px;
         padding: 0px 0px;
+    }
+
+    .home-header{
+        width: 25%;
+    }
+    
+    .details-header{
+        margin-left: 52rem;
+        width: 12%;
     }
 }
 
@@ -173,7 +204,15 @@ header ul li a {
     .container-header {
         margin-top: 2rem;
         margin-left: 60rem;
-        width: 25%;
         padding: 0px 0px;
+    }
+
+    .home-header{
+        width: 25%;
+    }
+    
+    .details-header{
+        margin-left: 71rem;
+        width: 12%;
     }
 }

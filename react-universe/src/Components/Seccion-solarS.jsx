@@ -58,7 +58,7 @@ export const SistemaSolar = ({valueToDetails}) =>{
                             </article>
                             <article>
                                 <figure>
-                                    <img className="tierra" src="\world-1348808__340.webp" alt="" />
+                                    <img className="tierra" src="\world-1348808__340.png" alt="" />
                                 </figure>
                                 <div className="article-preview">
                                     <h2>Tierra</h2>

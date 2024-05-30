@@ -1,6 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import '../../Styles/Details.css'
-import { findById } from "../../Services/DetailsService";
+import { findById } from "../../Services/DetailsService.js";
 import { useState, useEffect } from "react";
 
 export const PlanetDetail = ({ valueToDetails, valueToDetails2 }) => {
@@ -10,11 +10,13 @@ export const PlanetDetail = ({ valueToDetails, valueToDetails2 }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        if (planet.modelUrl && planet.imageURL) {
         const newSceneContent = window.innerWidth <= 767
             ? { type: 'image', url: planet.imageURL }
             : { type: 'spline', url: planet.modelUrl };
 
         setSceneContent(newSceneContent);
+        }
     }, [planet]);
 
     const obtainPlanetById = async () => {
@@ -45,17 +47,15 @@ export const PlanetDetail = ({ valueToDetails, valueToDetails2 }) => {
                 <div className="planet-model">
                     {sceneContent.type === 'spline' ? (
                         <>
-                            {loading && (<div class="d-flex justify-content-center personalized-spinner">
-                                <div class="spinner-border text-light" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                            {loading && (<div className="d-flex justify-content-center personalized-spinner">
+                                <div className="spinner-border text-light" role="status">
+                                    <span className="visually-hidden">Loading...</span>
                                 </div>
                             </div>)}
                             <Spline onLoad={handleLoading} className="model" scene={sceneContent.url} />
                             {planet.distanciaALaTierra !== '0' && (
-                                <div className="container-button"> {/* Hacer que al darle click al boton comparar, se cambie el texto al nombre del planeta solo.
-                                Corregir header y footer. 
-                                Añadir un boton de ver mas caracteristicas de cada planeta y sea mas texto interesante de cada uno*/}
-                                    <button onClick={handlerScene} className="btn btn-secondary handler-scene" type="button">Comparar con la tierra</button>
+                                <div className="container-button"> {/*Añadir un boton de ver mas caracteristicas de cada planeta y sea mas texto interesante de cada uno. Mejorar botones de seccion El Universo, otro color, tamaño?*/}
+                                    <button onClick={handlerScene} className="btn btn-secondary handler-scene" type="button">{planet.modelCompareUrl !== sceneContent.url ? (<span>Comparar con la tierra</span>) : (<span>Volver</span>) }</button>
                                 </div>
                             )}
                         </>

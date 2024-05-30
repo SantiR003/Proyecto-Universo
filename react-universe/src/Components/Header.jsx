@@ -1,11 +1,18 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import '../Styles/Header.css'
+import { useEffect } from 'react';
+
 
 export const Header = () => {
 
     const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+    
     return (
-        <header className='container-header'>
+        <header className={`container-header ${location.pathname === '/home' ? 'home-header' : 'details-header'}`}>
             {location.pathname === '/home' ? (
                 <nav>
                     <ul>
@@ -17,7 +24,7 @@ export const Header = () => {
             ) : (
                 <nav>
                     <ul>
-                        <li><NavLink className={'toHome elemento-nav'} to={'/home'}>Inicio</NavLink></li>
+                        <li><NavLink className='elemento-detailsPage elemento-nav' to='/home'>Inicio</NavLink></li>
                     </ul>
                 </nav>
             )

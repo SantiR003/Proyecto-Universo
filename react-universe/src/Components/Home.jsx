@@ -9,7 +9,7 @@ export const HomeUniverse = ({valueToDetails}) => {
 
     const getInitialSceneContent = () => {
         return window.innerWidth <= 767
-            ? { type: 'image', url: 'world-1348808__340.webp' }
+            ? { type: 'image', url: 'world-1348808__340.png' }
             : { type: 'spline', url: "https://prod.spline.design/hDOuM7N7cNB8XfWB/scene.splinecode" };
     };
 
@@ -19,7 +19,7 @@ export const HomeUniverse = ({valueToDetails}) => {
     useEffect(() => {
         const handleResize = () => {
             const newContent = window.innerWidth <= 767
-                ? { type: 'image', url: 'world-1348808__340.webp' }
+                ? { type: 'image', url: 'world-1348808__340.png' }
                 : { type: 'spline', url: "https://prod.spline.design/hDOuM7N7cNB8XfWB/scene.splinecode" };
             setSceneContent(newContent);
         };
@@ -47,9 +47,9 @@ export const HomeUniverse = ({valueToDetails}) => {
                 <div id="spline-container" style={{ width: '100%', height: '100vh' }}>
                 {sceneContent.type === 'spline' ? (
                     <>
-                     {loading && (<div class="d-flex justify-content-center personalized-spinner">
-                                <div class="spinner-border text-light" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                     {loading && (<div className="d-flex justify-content-center personalized-spinner">
+                                <div className="spinner-border text-light" role="status">
+                                    <span className="visually-hidden">Loading...</span>
                                 </div>
                             </div>)}
                         <Spline onLoad={handleLoading} scene={sceneContent.url} />
