@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: black; */
   background-image: url('photo-1544656376-ffe19d4b7353.jpg');
   background-size: 50%;
   font-family: "Cormorant Garamond", serif;
@@ -230,8 +229,12 @@ h2 {
 }
 
 .personalized {
-  background-color: rgb(93, 162, 215);
-  border-color: rgb(43, 131, 175);
+  background-color: rgba(146, 110, 188, 0.815);
+  border-color: rgba(146, 75, 227, 0.815);
+}
+
+.btn-group button{
+  width: 15rem;
 }
 
 .btn-check:checked+.btn,
@@ -246,19 +249,20 @@ h2 {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: var(--bs-dropdown-link-hover-color);
-  background-color: rgb(97, 150, 189);
+  color: white;
+  background-color: rgb(134, 97, 189);
 }
 
 .personalized:hover {
-  background-color: rgb(0, 145, 255);
-  border-color: rgb(0, 170, 255);
+  background-color: rgba(193, 103, 220, 0.88);
+  border-color: rgba(146, 75, 227, 0.815);
 
 }
 
+
 .personalized-menu {
   color: white;
-  background-color: rgb(44, 101, 144);
+  background-color: rgb(67, 46, 80);
 }
 
 .personalized-menu a{
@@ -313,7 +317,7 @@ h2 {
 @media (min-width: 481px) and (max-width: 767px) {
 
   .articles article {
-    max-height: 34rem;
+    max-height: auto;
   }
 
   .title {
@@ -343,7 +347,7 @@ h2 {
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 0; 
   }
 
@@ -353,11 +357,11 @@ h2 {
 
   .text-title {
     width: 55%;
-    transform: translate(-15%, 40%);
+    transform: translate(-15%, 10%);
   }
 
   .text-intro {
-    font-size: x-large;
+    font-size: larger;
     text-align: justify;
   }
 
@@ -400,6 +404,10 @@ h2 {
     text-align: justify;
   }
 
+  .btn-group button{
+    width: auto;
+  }
+
   .card-selected {
     margin: 0 auto;
     margin-top: 5rem;
@@ -424,7 +432,7 @@ h2 {
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0; 
   }
 
@@ -435,12 +443,16 @@ h2 {
 
   .text-title {
     width: 50%;
-    transform: translate(-6%, 35%);
+    transform: translate(-6%, 20%);
   }
 
   .text-intro {
-    font-size: xx-large;
+    font-size: x-large;
     text-align: justify;
+  }
+
+  .btn-group button{
+    width: 13rem;
   }
 
   .card-selected {

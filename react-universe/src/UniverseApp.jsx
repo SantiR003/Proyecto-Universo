@@ -7,26 +7,26 @@ import { Header } from "./Components/Header";
 
 export const UniverseLanding = () => {
 
-    const [data, setData] = useState(0);
-    const[data2, setData2] = useState('');
+    /* const [data, setData] = useState(0);
+    const[data2, setData2] = useState(''); */
  
     const ValueToDetails = (value, secondValue) => {
-        setData(value);
-        setData2(secondValue);
+        /* setData(value);
+        setData2(secondValue); */
+        localStorage.setItem('value1', value);
+        localStorage.setItem('value2', secondValue);
     };
 
     return (
         <>
-        <Header/>
             <Routes>
                 <Route path="home" element={<PageUniverse valueToDetails={ValueToDetails}/>} />
-                <Route path="details" element={<PlanetDetail valueToDetails={data}  valueToDetails2 = {data2} />} />
+                <Route path="details" element={<PlanetDetail /* valueToDetails={data}  valueToDetails2 = {data2} */ />} />
 
                 <Route path="/" element={<Navigate to={'/home'} />} />
                 <Route path="**" element={<Navigate to={'/home'} />} />
+                <Route path="Home" element={<Navigate to={'/home'} />} />
             </Routes>
-            <Footer/>
-
         </>
     );
 

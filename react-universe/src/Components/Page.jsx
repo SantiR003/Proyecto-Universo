@@ -10,6 +10,8 @@ export const PageUniverse = ({valueToDetails}) => {
    <Header/>
 
    <HomeUniverse valueToDetails={valueToDetails}/>
+   
+    <Footer/>
   </>
  );
 
