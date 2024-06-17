@@ -176,7 +176,7 @@ export const UniverseData = () =>{
                             En un instante de tiempo increíblemente corto, esta singularidad experimentó una expansión explosiva y violenta, dando inicio al universo tal como lo conocemos. Durante los primeros momentos después del Big Bang, el universo era un mar de partículas subatómicas en constante movimiento y colisión
                             <br /> <br />
                             A medida que el universo se expandía y enfriaba, las partículas subatómicas comenzaron a unirse para formar átomos de hidrógeno y helio, los elementos más simples. Con el tiempo, estas nubes primordiales de gas se condensaron bajo la influencia de la gravedad, formando estrellas y galaxias.</p>
-                    </div>  {/* solucionar error de que al hacer click en las cards te devuelve a la parte superior de la pagina */}
+                    </div> 
                 </div>
             </section>
         </>

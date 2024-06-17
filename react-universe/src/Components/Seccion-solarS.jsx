@@ -10,6 +10,7 @@ export const SistemaSolar = ({valueToDetails}) =>{
                 <div className="background">
                     <div className="centering">
                         <div className="articles">
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }} className={'read-more'} to={'/details'} onClick={() => valueToDetails(1,'s')}>
                             <article>
                                 <figure>
                                     <img className="sol" src="\sol-removebg-preview.png" alt="" />
@@ -17,15 +18,16 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                 <div className="article-preview">
                                     <h2>SOL</h2>
                                     <p>
-                                        El <strong>Sol</strong>, es una estrella de Tipo-G de la secuencia principal o "Enana Amarilla", que
+                                        El <strong>Sol</strong>, es una estrella de Tipo-G de la secuencia principal, que
                                         se encuentra en el centro del sistema solar. Se formo hace aproximadamente 4.600 millones
                                         de años a partir de una nube de gases que se encontraba en la region, donde la mayoria de la materia
                                         se acumulo y dio origen a nuestra estrella, la cual hoy en dia constituye el 99.86% de la masa del sistema solar.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(1,'s')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }} className={'read-more'} to={'/details'} onClick={() => valueToDetails(7,'p')}>
                             <article>
                                 <figure>
                                     <img src="\el-planeta-mercurio_c7bafef8_1280x720-removebg-preview.png" alt="" />
@@ -37,10 +39,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         Debido a su proximidad al Sol, Mercurio experimenta variaciones extremas en la temperatura de su superficie,
                                         alcanzando valores que oscilan entre los 430°C y los -180°C.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(7,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }} className={'read-more'} to={'/details'} onClick={() => valueToDetails(3,'p')}>
                             <article>
                                 <figure>
                                     <img src="\Venus_globe-removebg-preview.png" alt="" />
@@ -52,10 +55,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         Al igual que Mercurio este cuerpo celeste no posee ningun satelite natural. Es un planeta interior el cual pese a
                                         estar mas lejos del sol que Mercurio, tiene una temperatura superficial de 463°C, siendo asi el mas caliente del sistema solar.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(3,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }} className={'read-more'} to={'/details'} onClick={() => valueToDetails(1,'p')}>
                             <article>
                                 <figure>
                                     <img className="tierra" src="\world-1348808__340.png" alt="" />
@@ -67,10 +71,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         Nuestro mundo se creo hace 4.500 millones de años y posee un satelite natural el cual es la Luna. Es el hogar
                                         de millones de formas de vida incluyendo a los humanos y es el unico cuerpo astronomico donde se conoce la existencia de vida.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(1,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }}  className={'read-more'} to={'/details'} onClick={() => valueToDetails(2,'p')}>
                             <article>
                                 <figure>
                                     <img className="marte" src="\Schiaparelli_Hemisphere_Enhanced-removebg-preview.png" alt="" />
@@ -82,10 +87,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         con una atmosfera delgada y posee dos satelites naturales pequeños. Marte alberga la montaña y volcan mas grande del sistema solar,
                                         conocido como el "Monte Olimpo" con una altura de 22km, unas tres veces el "Monte Everest".
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(2,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }} className={'read-more'} to={'/details'} onClick={() => valueToDetails(4,'p')}>
                             <article>
                                 <figure>
                                     <img className="jupiter" src="\Jupiter-removebg-preview.png" alt="" />
@@ -97,10 +103,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         de los denominados "Planetas Exteriores". Posee una masa 318 veces la de la tierra y un volumen 1321 veces mayor. Es el planeta
                                         mas antiguo del sistema solar, incluso mas antiguo que su propia estrella. Tiene 95 satelites natulares en orbita.
 
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(4,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }}  className={'read-more'} to={'/details'} onClick={() => valueToDetails(5,'p')}>
                             <article>
                                 <figure>
                                     <img className="saturno" src="\saturno-removebg-preview.png" alt="" />
@@ -113,10 +120,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         Aunque su volumen es 740 veces el de la Tierra, su baja densidad significa que solo tiene 95 veces su masa.
                                         Tiene 145 satélites naturales en órbita.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(5,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }}  className={'read-more'} to={'/details'} onClick={() => valueToDetails(6,'p')}>
                             <article>
                                 <figure>
                                     <img src="\Uranus-removebg-preview.png" alt="" />
@@ -128,10 +136,11 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         un "Gigante Helado" por su composicion principalmente de hielo, agua, amoníaco y metano. Posee la atmosfera planetaria mas fria del sistema solar
                                         con temperaturas minimas de -224°C. Urano tiene 27 satelites naturales conocidos.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(6,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'inherit' }} className={'read-more'} to={'/details'} onClick={() => valueToDetails(8,'p')}>
                             <article>
                                 <figure>
                                     <img className="neptuno" src="\Neptuno-removebg-preview.png" alt="" />
@@ -144,10 +153,10 @@ export const SistemaSolar = ({valueToDetails}) =>{
                                         Junto con Urano, comparte una composición distinta de los otros gigantes gaseosos, lo que los diferencia.
                                         Neptuno tiene 16 satélites naturales conocidos.
                                         <br />
-                                        <NavLink className={'read-more'} to={'/details'} onClick={() => valueToDetails(8,'p')}>Leer Más</NavLink>
                                     </p>
                                 </div>
                             </article>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

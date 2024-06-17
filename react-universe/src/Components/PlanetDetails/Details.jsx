@@ -16,7 +16,7 @@ export const PlanetDetail = (/* { valueToDetails, valueToDetails2 } */) => {
 
     useEffect(() => {
         if (planet.modelUrl && planet.imageURL) {
-            const newSceneContent = window.innerWidth <= 767
+            const newSceneContent = window.innerWidth <= 1919
                 ? { type: 'image', url: planet.imageURL }
                 : { type: 'spline', url: planet.modelUrl };
 
@@ -36,7 +36,7 @@ export const PlanetDetail = (/* { valueToDetails, valueToDetails2 } */) => {
 
 
     const planetText = {
-        Sol:   `Nuestro Sol, la estrella central de nuestro sistema solar, fue descubierto y observado por civilizaciones antiguas,
+        Sol: `Nuestro Sol, la estrella central de nuestro sistema solar, fue descubierto y observado por civilizaciones antiguas,
         siendo objeto de culto y estudio desde tiempos remotos. Se compone principalmente de hidrógeno y helio, con pequeñas
         cantidades de otros elementos. Aunque no posee satélites naturales, su actividad solar, como las manchas solares y las
         eyecciones de masa coronal, impactan directamente en la vida en la Tierra, afectando las comunicaciones y el clima
@@ -49,44 +49,44 @@ export const PlanetDetail = (/* { valueToDetails, valueToDetails2 } */) => {
         A pesar de su proximidad al Sol, Mercurio tiene agua helada en sus cráteres polares permanentemente en sombra. No
         posee satélites naturales conocidos.`,
 
-    Venus: `Venus, el segundo planeta del sistema solar, fue objeto de estudio desde la antigüedad. Su brillante apariencia
+        Venus: `Venus, el segundo planeta del sistema solar, fue objeto de estudio desde la antigüedad. Su brillante apariencia
         en el cielo nocturno lo convirtió en un objeto de observación para muchas culturas. Está compuesto principalmente de
         dióxido de carbono y nitrógeno, con densas nubes de ácido sulfúrico que cubren su superficie. Aunque no tiene
         satélites naturales, su atmósfera está llena de fenómenos interesantes, como la super-rotación, donde su atmósfera
         tarda solo cuatro días en girar alrededor del planeta, a pesar de que su rotación es mucho más lenta.`,
 
-    Tierra: `La Tierra, nuestro hogar, ha sido estudiada y habitada por la humanidad desde tiempos prehistóricos. Conocida por
+        Tierra: `La Tierra, nuestro hogar, ha sido estudiada y habitada por la humanidad desde tiempos prehistóricos. Conocida por
         su diversidad biológica y su única atmósfera rica en oxígeno, la Tierra es el único planeta conocido que alberga vida.
         Su composición rocosa y metálica ha sido moldeada por procesos geológicos y biológicos a lo largo de millones de años.
         Además de la Luna, la Tierra tiene miles de satélites artificiales en órbita, utilizados para una variedad de
         propósitos, desde la comunicación hasta la observación del clima y la navegación.`,
 
-    Marte: `Marte, el planeta rojo, ha fascinado a la humanidad durante siglos. Fue objeto de observación por parte de
+        Marte: `Marte, el planeta rojo, ha fascinado a la humanidad durante siglos. Fue objeto de observación por parte de
         civilizaciones antiguas, pero su verdadera naturaleza y su posibilidad de albergar vida capturaron la imaginación
         humana. Está compuesto principalmente de rocas y óxidos metálicos, con una fina atmósfera de dióxido de carbono.
         Marte tiene dos satélites naturales, Fobos y Deimos, que probablemente sean asteroides capturados. Además de su
         geología intrigante, Marte es objeto de investigación para futuras misiones de exploración y posible colonización
         humana.`,
 
-    Júpiter: `Júpiter, el gigante gaseoso, ha sido observado durante siglos por astrónomos aficionados y profesionales
+        Júpiter: `Júpiter, el gigante gaseoso, ha sido observado durante siglos por astrónomos aficionados y profesionales
         por igual. Es conocido por sus impresionantes bandas atmosféricas y la Gran Mancha Roja, una gigantesca tormenta
         que ha durado siglos. Está compuesto principalmente de hidrógeno y helio, con una densa atmósfera de nubes de
         amoníaco y metano. Júpiter tiene 79 satélites naturales conocidos, siendo los más destacados las lunas de Galileo,
         Io, Europa, Ganimedes y Calisto. Además, su magnetosfera extensa y poderosa lo convierte en un protector natural
         contra las radiaciones cósmicas en el sistema solar.`,
 
-    Saturno: `Saturno, conocido por sus impresionantes anillos, ha sido objeto de estudio y fascinación desde la antigüedad.
+        Saturno: `Saturno, conocido por sus impresionantes anillos, ha sido objeto de estudio y fascinación desde la antigüedad.
         Es un gigante gaseoso compuesto principalmente de hidrógeno y helio, con densas nubes de amoníaco en su atmósfera.
         Sus anillos, compuestos principalmente de partículas de hielo y roca, son el resultado de la fragmentación de lunas
         o la captura de cometas. Saturno tiene 82 satélites naturales conocidos, siendo los más destacados Titán, el único
         satélite en el sistema solar con una atmósfera densa, y Encélado, que tiene géiseres de agua en su polo sur.`,
 
-    Urano: `Urano, el gigante helado, fue descubierto en 1781 por el astrónomo William Herschel. Es un mundo misterioso,
+        Urano: `Urano, el gigante helado, fue descubierto en 1781 por el astrónomo William Herschel. Es un mundo misterioso,
         con una inclinación extrema de su eje que lo hace girar casi de lado. Está compuesto principalmente de hielo de agua,
         metano y amoníaco en su atmósfera. Urano tiene 27 satélites naturales conocidos, siendo el más destacado Miranda,
         que muestra signos de actividad geológica pasada y presente.`,
 
-    Neptuno: `Neptuno, el gigante helado más distante del Sol, fue descubierto en 1846 por el matemático francés Urbain
+        Neptuno: `Neptuno, el gigante helado más distante del Sol, fue descubierto en 1846 por el matemático francés Urbain
         Le Verrier y el astrónomo alemán Johann Galle. Está compuesto principalmente de hielo de agua, amoníaco y metano,
         con una atmósfera dinámica llena de vientos huracanados y tormentas. Neptuno tiene 14 satélites naturales conocidos,
         siendo el más destacado Tritón, que tiene una órbita retrógrada y podría ser un objeto capturado del Cinturón de
@@ -141,7 +141,16 @@ export const PlanetDetail = (/* { valueToDetails, valueToDetails2 } */) => {
                                     )}
                                 </>
                             ) : (
-                                <img src={sceneContent.url} alt="world image" />
+                                <>
+                                {loading && (
+                                        <div className="d-flex justify-content-center personalized-spinner">
+                                            <div className="spinner-border text-light" role="status">
+                                                <span className="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                    )}
+                                <img onLoad={handleLoading} loading="eager" src={sceneContent.url} alt="" />
+                                </>
                             )}
                         </div>
                         <div className="container-information">
@@ -189,14 +198,14 @@ export const PlanetDetail = (/* { valueToDetails, valueToDetails2 } */) => {
                                 </div>
                             ) : (
                                 <div className="container-dataText">
-                                    <p style={{ color: "white" }} id="text-details">
-                                        <div className="title-dataText">
+                                    <div className="title-dataText">
                                         {planet.nombre}
-                                        </div>
-                                        <div className="body-dataText">
-                                        {planet.nombre ? planetText[planet.nombre] : ''}
-                                        </div>
-                                    </p>
+                                    </div>
+                                    <div className="body-dataText">
+                                        <p style={{ color: "white" }} id="text-details">
+                                            {planet.nombre ? planetText[planet.nombre] : ''}
+                                        </p>
+                                    </div>
                                 </div>
                             )}
                             <div className="container-button">

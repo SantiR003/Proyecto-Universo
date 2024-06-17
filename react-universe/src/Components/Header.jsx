@@ -8,12 +8,15 @@ export const Header = () => {
     const location = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        if(!location.hash)
+            {
+                window.scrollTo(0, 0);
+            }
     }, [location.pathname]);
     
     return (
-        <header className={`container-header ${location.pathname === '/home' ? 'home-header' : 'details-header'}`}>
-            {location.pathname === '/home' ? (
+        <header className={`container-header ${location.pathname === '/home' || location.hash === '#card-selected' ? 'home-header' : 'details-header'}`}>
+        {location.pathname === '/home' || location.hash === '#card-selected' ? (
                 <nav>
                     <ul>
                         <li><a href="#" className='elemento-nav'>Inicio</a></li>

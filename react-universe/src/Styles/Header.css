@@ -121,6 +121,7 @@ header ul li a {
         margin-left: 19rem;
         padding: 2px 0px;
         width: 45%;
+        height: 60px;
     }
 
     .home-header{
@@ -143,17 +144,17 @@ header ul li a {
 
     .container-header {
         margin-top: 2rem;
-        margin-left: 22rem;
+        margin-left: 25rem;
         height: 60px;
         padding: 0px 0px;
     }
 
     .home-header{
-        width: 45%;
+        width: 40%;
     }
     
     .details-header{
-        margin-left: 38rem;
+        margin-left: 34rem;
         width: 19%;
     }
 

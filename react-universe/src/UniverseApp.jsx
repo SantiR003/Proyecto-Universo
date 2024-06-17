@@ -1,9 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { PageUniverse } from "./Components/Page";
 import { PlanetDetail } from "./Components/PlanetDetails/Details";
-import { useState } from "react";
-import { Footer } from "./Components/Footer.jsx";
-import { Header } from "./Components/Header";
+
 
 export const UniverseLanding = () => {
 
